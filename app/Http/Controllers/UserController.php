@@ -82,6 +82,9 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
+
+        // dd($user);
+
         return view('users.edit', compact('user'));
         
     }
@@ -95,7 +98,16 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        //
+        
+        $request->validate([
+            'email' => 'required',
+            'password' => 'required'
+        ]);
+
+        $user->update($request->all());
+
+        return redirect()->route('admin.users.index');
+
     }
 
     /**

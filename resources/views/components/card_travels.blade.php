@@ -4,7 +4,7 @@
     </div>
     <p class="mt-1 text-gray-600"><strong>Calle principal:</strong> {{$travel->main_street}}</p>
     <p class="mt-1 text-gray-600"><strong>Calle secundaria:</strong> {{$travel->secondary_street}}</p>
-    <p class="mt-1 text-gray-600"><strong>Referencia:</strong> Pendiente</p>
-    <p class="mt-1 text-gray-600"><strong>Barrio:</strong> Pendiente</p>
-    <p class="mt-1 text-gray-600"><strong>Inf. Adicional:</strong> Pendiente</p>
+    <p class="mt-1 text-gray-600"><strong>Referencia:</strong> {{$travel->reference}}</p>
+    <p class="mt-1 text-gray-600"><strong>Barrio:</strong> {{$travel->neighborhood}}</p>
+    <p class="mt-1 text-gray-600"><strong>Inf. Adicional:</strong> {{$travel->additional_information}}</p>
 </div>

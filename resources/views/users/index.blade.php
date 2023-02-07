@@ -44,7 +44,7 @@
                                 <td>{{ $user->estado }}</td>
 
                                 <td class="d-flex">
-                                    <a style="margin-right: 1rem" href="" class="btn btn-primary">Editar</a>
+                                    <a style="margin-right: 1rem" href="{{ route('admin.users.edit', $user)}}" class="btn btn-primary">Editar</a>
                                     <form action="{{ route('admin.users.destroy', $user) }}" method="POST">
                                         @csrf
                                         @method('delete')
